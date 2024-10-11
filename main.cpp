@@ -33,7 +33,7 @@ public:
             dlclose(handle);
         }
 
-        initializeDLL(4);
+        initializeDLL(5);
         exVecData= (vector<int*> *)dlsym(handle,"data");
         dlsym_error = dlerror();
         if(dlsym_error)

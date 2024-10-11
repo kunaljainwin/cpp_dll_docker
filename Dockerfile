@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     cmake
 
 # Copy the source code into the container
-COPY . .
+# COPY . .
 
 # # Compile the C++ code
 # RUN g++ -o main main.cpp 
