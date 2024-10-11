@@ -1,3 +1,6 @@
+# Introduction
+c++ project which builds a Shared Object (DLL) and main application to load SO at runtime using makefile 
+inside a docker container.
 
 ## Requirements
 
