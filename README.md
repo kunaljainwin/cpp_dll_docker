@@ -53,7 +53,7 @@ To connect to the container and run commands
 docker exec -it main /bin/bash
 ```
 
-To connect to the container and build binaries
+To build binaries
 
 ```bash
 make all 
