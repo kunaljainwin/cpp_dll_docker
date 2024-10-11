@@ -77,12 +77,3 @@ API_FUNC void IncrementAll(int x)
 }
 /* DLL Definitions [E] */
 
-
-/* internal tests */
-// int main()
-// {
-//     // Test the InitializeDLL function with a size of 5
-//     InitializeDLL(5);
-//     cout<<"DLL main called "<<endl;
-//     return 0;
-// }

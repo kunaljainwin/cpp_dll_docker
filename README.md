@@ -1,4 +1,10 @@
 
+## Requirements
+
+    Docker: Install Docker
+    Docker Compose: Install Docker Compose
+    
+
 ## Running with Docker Compose
 
 Below is the [Dockerfile](Dockerfile) for the C++ application:
@@ -15,8 +21,7 @@ RUN apt-get update && apt-get install -y \
     g++ \
     cmake
 
-# Copy the source code into the container
-COPY . .
+
 
 ```
 
@@ -31,12 +36,26 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
+    volumes:
+      - ./:/app
+
 ```
 
 To build and run the Docker image using Docker Compose, use the following command:
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
+
+To connect to the container and run commands 
+
+```bash
+docker exec -it main /bin/bash
+```
+
+To connect to the container and build binaries
+
+```bash
+make all 
+```
+
